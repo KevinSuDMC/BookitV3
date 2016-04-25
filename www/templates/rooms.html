@@ -1,0 +1,34 @@
+      <ion-view view-title="Book a room">
+
+
+
+      <div class="bar bar-subheader item-input-inset bar-light">
+        <label class="item-input-wrapper">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="search" ng-model="query" placeholder="Search">
+        </label>
+      </div>
+
+      <ion-content class="has-subheader">
+        <ion-list ng-controller="ListController">
+          <ion-item ng-repeat='item in rooms |filter: query' class="item-thumbnail-left item-icon-right " 
+          href="#tab/rooms/{{item.name}}">       
+            <img ng-src="img/Room_{{item.name}}_tn.jpg" alt="Room {{item.name}}">
+            <h2> Room: {{item.name}} </h2>
+            <h3> Floor: {{item.floor}} </h3>
+            <h3> Capacity: {{item.capacity}} </h3>
+
+            <button class="button button-clear icon ion-heart button-assertive"
+            ng-click="toggleHeart(item)"
+            ng-show="item.heart"></button>
+
+            <ion-option-button class="button-energized"
+            ng-click="toggleHeart(item)">
+              <i class="icon ion-heart"></i>
+            </ion-option-button>
+
+          </ion-item>
+        </ion-list>
+      </ion-content>
+
+</ion-view>

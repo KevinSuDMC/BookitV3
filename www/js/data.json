@@ -1,0 +1,38 @@
+{
+	"rooms": [
+	{
+	"name": "401",
+	"floor": "4",
+	"capacity": "15 people"
+	},{
+	"name": "402",
+	"floor": "4",
+	"capacity": "50 people"
+	},{
+	"name": "403",
+	"floor": "4",
+	"capacity": "8 people"
+	},{
+	"name": "404",
+	"floor": "4",
+	"capacity": "4 people"
+	},{
+	"name": "405",
+	"floor": "4",
+	"capacity": "15 people"
+	},{
+	"name": "406",
+	"floor": "4",
+	"capacity": "4 people"
+	},{
+	"name": "407",
+	"floor": "4",
+	"capacity": "12 people"
+	},{
+	"name": "408",
+	"floor": "4",
+	"capacity": "4 people"
+	}
+	]
+
+}
