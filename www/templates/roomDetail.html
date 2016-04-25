@@ -12,8 +12,23 @@
 		            <h3> Floor: {{item.floor}} </h3>
 		            <h3> Capacity: {{item.capacity}} </h3>
 				
- 			<p> insert calendar of room here </p>
+ 				<p> insert calendar of room here </p>
+ 			    </div>
+ 			    
+ 			    <div ng-app="mwl.calendar.docs">
+	 			    <div ng-controller="DayViewSplitCtrl as vm">
+	  				<ng-include src="'calendarControls.html'"></ng-include>
+	 			    	<mwl-calendar
+				            events="vm.events"
+				            view="vm.calendarView"
+				            view-date="vm.viewDate"
+				            day-view-start="08:00"
+				            day-view-end="20:00"
+				            on-event-click="eventClicked(calendarEvent)"
+			            	view-date="calendarDate">
+	          			</mwl-calendar>
+	          		</div>
+        		</div>
  			</div>
-   		</ion-card>
       </ion-content>
 </ion-view>
