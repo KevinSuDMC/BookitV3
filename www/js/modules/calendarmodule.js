@@ -1,6 +1,5 @@
-angular.module('mwl.calendar.docs', ['mwl.calendar', 'ngAnimate', 'ui.bootstrap']);
 angular
-  .module('mwl.calendar.docs')
+  .module('starter')
   .controller('DayViewSplitCtrl', function(moment) {
 
     var vm = this;
